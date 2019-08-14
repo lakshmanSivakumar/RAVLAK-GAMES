@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+</head>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Comfortaa', cursive;
+  background-color: #f8f8f8;
+}
+
+.buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.btn-hover {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #f8f8f8;
+    cursor: pointer;
+    height: 55px;
+    text-align:center;
+    border: none;
+    background-size: 300% 100%;
+    border-radius: 50px;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:hover {
+    background-position: 100% 0;
+    transition: all .4s ease-in-out;
+}
+
+.btn-hover:focus {
+    outline: none;
+}
+
+.btn-hover.color-9 {
+    background-image: linear-gradient(to right, #25cce1, #4481eb, #04befe, #3f86ed);
+    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+}
+/* Style the counter cards */
+.card {
+  box-shadow: 0 1px 2px rgba(0,0,0,.2);
+  padding: 16px;
+  height: 600px;
+  width: 600px;
+  text-align: center;
+  border-radius: 3px;
+  background-color: white;
+  display: inline-block;
+  margin: 100px 100px 50px 200px;
+}
+
+h1{
+ text-align: center;
+  background: linear-gradient(to right, #30CFD0 0%, #330867 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font: {
+    size: 20vw;
+    family: $font;
+  };
+}
+h2{
+  color: #B0B3B9;
+}
+
+</style>
+</head>
+<body>
+
+<h1>RAVLAK GAMES</h1>
+    <div class="card">
+      <h1>Rock Paper Scissors</h1>
+      <h2>Scissor cuts paper, you win!</h2>
+      <img src="static/images/stonepaperscissor.jpg" style="height: 300px; width: 500px;" alt="">
+      <form action="{{ url_for('rps') }}" method="GET">
+        <button class="buttons btn-hover color-9">Play now!</button>
+  	  </form>
+  </div>
+  
+    <div class="card">
+      <h1>Floppy Bird</h1>
+      <h2>Keep floating until you crash!</h2>
+      <img src="static/images/floppybird.jpg" style="height: 300px; width: 500px;" alt="">
+      <form action="{{ url_for('floppy') }}" method="GET">
+      	<button class="buttons btn-hover color-9">Play now!</button>
+  	  </form>
+    </div>  
+
+</body>
+</html>

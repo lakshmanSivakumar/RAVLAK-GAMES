@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Flappy Bird</title>
+    <link href="static/css/Flappy.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet"> </head>
+
+<body>
+
+
+    <div id="container">
+        <img src="static/images/sky.jpg" alt="sky">
+        <div id="bird">
+            <img src="static/images/newbird.png" alt="sky">
+        </div>
+        <div id="pole_1" class="pole"></div>
+        <div id="pole_2" class="pole"></div>
+    </div>
+    <div id="score_div">
+        <p><b>Score: </b><span id="score">0 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+        <b>Speed: </b><span id="speed">5</span></p>
+    </div>
+    <div id="help">
+        <p>Player: Use space bar to control the bird</p>
+    </div>
+
+    <button id="restart_btn">Restart</button>
+    <script src="static/js/FBjquery.min.js"></script>
+    <script src="static/js/FBscript_req.js"></script>
+</body>
+
+</html>
